@@ -841,19 +841,39 @@
 
 
 
-
+<!-- 
               <div class="form-group mt-3">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="">
               </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Сообщение" required></textarea>
+              <div class="form-group mt-3"> -->
+                <div class="form-group py-4">
+                  <label class="control-label" for="Language">Выберите язык из списка:</label>
+                  <select id="Language" class="form-control" name="Язык">
+                    <option value="small">...</option>
+                      <option value="Английский">Английский</option>
+                      <option value="Польский">Польский</option>
+                      <option value="Испанский">Испанский</option>
+                      <option value="Итальянский">Итальянский</option>
+                  </select> 
+              </div>
+              <div class="form-group pb-4">
+                <label class="control-label" for="Level">Выберите ваш текущий уровень владения этим языком:</label>
+                <select id="Level" class="form-control" name="Уровень">
+                  <option value="small">...</option>
+                    <option value="Нулевой">Знания отсутствуют</option>
+                    <option value="Начальный">Начальный уровень - знаю кое-какие слова и правила</option>
+                    <option value="Базовый">Базовый - владею основной грамматикой и лексикой</option>
+                    <option value="Продвинутый">Продвинутый - неплохо знаю язык, но не хватает практики</option>
+                </select> 
+            </div>
+                <textarea class="form-control" name="message" rows="5" placeholder="Напишите здесь, пожалуйста, где вы живете (страна и город), и есть ли у вас какие-нибудь вопросы." required></textarea>
               </div>
               <!-- <div class="my-3">
                 <div class="loading">Загрузка</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Ваше сообщение было отправлено. Спасибо!</div>
               </div> -->
-              <div class="text-center"><button type="submit">Отправить</button></div>
+              <div class="text-center p-4"><button type="submit">Записаться на пробный урок</button></div>
             </form>
 
           </div>

@@ -920,7 +920,20 @@
                     <option value="Продвинутый">Продвинутый - неплохо знаю язык, но не хватает практики</option>
                 </select> 
             </div>
-                <textarea class="form-control" name="message" rows="5" placeholder="Напишите здесь, пожалуйста, где вы живете (страна и город), и есть ли у вас какие-нибудь вопросы." required></textarea>
+
+            <div class="form-group pb-4">
+              <label class="control-label" for="Time">В какое время дня вам будет удобно заниматься?</label>
+              <select id="Time" class="form-control" name="Время">
+                <option value="small">...</option>
+                  <option value="9-11">Между 9 и 11 часами</option>
+                  <option value="11-15">Между 11 и 15 часами</option>
+                  <option value="15-18">Между 15 и 18 часами</option>
+                  <option value="18-20">Между 18 и 20 часами</option>
+                  <option value="20+">После 20 часов (доступно в некоторых часовых поясах)</option>
+
+              </select> 
+          </div>
+                <textarea class="form-control" name="Сообщение" rows="5" placeholder="Напишите здесь, пожалуйста, где вы живете (страна и город), и есть ли у вас какие-нибудь вопросы." required></textarea>
               </div>
               <!-- <div class="my-3">
                 <div class="loading">Загрузка</div>
